@@ -37,7 +37,7 @@ export default function Santorini() {
 
           {/* Visual */}
           <div className="h-[18rem] md:h-[22rem] rounded-2xl bg-white border border-black/5 shadow-soft overflow-hidden">
-            <img src={santoHero} alt="Santorini cliffs and blue domes at sunset" className="h-full w-full object-cover" />
+            <img src={santoHero} alt="Santorini cliffs and blue domes at sunset" className="h-full w-full object-cover" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>
@@ -47,7 +47,7 @@ export default function Santorini() {
         <h2 className="text-xl font-serif">Origin Story</h2>
         <div className="mt-4 grid md:grid-cols-2 gap-10 items-start">
           <div className="h-[18rem] md:h-[22rem] rounded-2xl bg-white border border-black/5 shadow-soft overflow-hidden order-2 md:order-1">
-            <img src={ryanMeg} alt="Two people smiling together" className="h-full w-full object-cover" />
+            <img src={ryanMeg} alt="Two people smiling together" className="h-full w-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div className="space-y-4 text-gray-700 max-w-prose order-1 md:order-2">
             <p>Meg and I were talking one day about places we would go if we could go anywhere, and Santorini, Greece was our decision.</p>

@@ -1,5 +1,6 @@
 // src/App.jsx
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProductCard from "./components/ProductCard";
@@ -10,6 +11,7 @@ import org from "./seo/organization.json";
 import ivlMock from "./assets/merch mockups/IVL Dropout Mockup.png";
 import bessieMock from "./assets/merch mockups/Beam Me Up, Bessie Mockup.png";
 import jesterMock from "./assets/merch mockups/Jester Mockup.png";
+import heroBanner from "./assets/Banners/Echo-League Banner.png";
 
 const products = [
 	{
@@ -35,6 +37,9 @@ const products = [
 export default function App() {
 	return (
 		<div id="top" className="min-h-screen flex flex-col bg-cream text-ink">
+			<Helmet>
+				<link rel="preload" as="image" href={heroBanner} />
+			</Helmet>
 			<SEO
 				title="EchoLeague — Designs worn to inspire"
 				description="Small-batch graphics with story and soul. Printed on demand to reduce waste."
@@ -85,10 +90,14 @@ export default function App() {
 					</div>
 
 					{/* Hero visual placeholder (swap with your image when ready) */}
-					<div className="h-[15rem] md:h-[20rem] rounded-2xl bg-ivory border border-black/5 shadow-soft flex items-center justify-center">
+					<div className="h-[15rem] md:h-[20rem] rounded-2xl bg-ivory border border-black/5 shadow-soft flex items-center justify-center overflow-hidden">
 						<img
-							src="/src/assets/Banners/Echo-League Banner.png"
+							src={heroBanner}
+							alt="EchoLeague hero banner"
 							className="h-full w-full object-cover rounded-2xl"
+							loading="eager"
+							decoding="async"
+							fetchpriority="high"
 						/>
 					</div>
 				</div>

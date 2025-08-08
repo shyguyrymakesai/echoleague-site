@@ -14,6 +14,8 @@ export default function ProductCard({ title, price, image, href }) {
             src={image}
             alt={title}
             className="h-full w-full object-cover"
+            loading="lazy"
+            decoding="async"
           />
         ) : (
           <div className="h-full w-full flex items-center justify-center text-gray-400 text-sm">
