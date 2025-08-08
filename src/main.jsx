@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
 import App from "./App.jsx";
 import Santorini from "./pages/Santorini.jsx";
@@ -20,9 +21,17 @@ function Root() {
 
   // Simple routes
   if (route.startsWith("#/pages/santorini")) {
-    return <Santorini />;
+    return (
+      <HelmetProvider>
+        <Santorini />
+      </HelmetProvider>
+    );
   }
-  return <App />;
+  return (
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
+  );
 }
 
 createRoot(document.getElementById("root")).render(<Root />);

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "EchoLeague",
+  "url": "https://echoleague.xyz/",
+  "logo": "https://echoleague.xyz/og/icon-192.png",
+  "sameAs": [
+    "https://www.etsy.com/shop/EchoLeague",
+    "https://instagram.com/echoleague"
+  ]
+}

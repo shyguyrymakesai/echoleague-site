@@ -3,6 +3,9 @@ import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProductCard from "./components/ProductCard";
+import SEO from "./seo/SEO";
+import JsonLd from "./seo/JsonLd";
+import org from "./seo/organization.json";
 
 import ivlMock from "./assets/merch mockups/IVL Dropout Mockup.png";
 import bessieMock from "./assets/merch mockups/Beam Me Up, Bessie Mockup.png";
@@ -32,6 +35,13 @@ const products = [
 export default function App() {
 	return (
 		<div id="top" className="min-h-screen flex flex-col bg-cream text-ink">
+			<SEO
+				title="EchoLeague — Designs worn to inspire"
+				description="Small-batch graphics with story and soul. Printed on demand to reduce waste."
+				canonical="https://echoleague.xyz/"
+				image="/og/og-default.jpg"
+			/>
+			<JsonLd data={org} />
 			<Header />
 
 			{/* HERO — single, professional */}

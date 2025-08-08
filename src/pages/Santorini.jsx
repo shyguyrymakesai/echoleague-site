@@ -1,10 +1,18 @@
 import React from "react";
 import ryanMeg from "../assets/santorini/ryan-meg.jpg";
 import santoHero from "../assets/santorini/santorini-hero-desktop-1920x1080.jpg";
+import SEO from "../seo/SEO";
 
 export default function Santorini() {
   return (
     <main className="bg-cream text-ink">
+      <SEO
+        title="Santorini — EchoLeague"
+        description="The origin story and our travel goal. Shop to support the trip."
+        canonical="https://echoleague.xyz/santorini"
+        image="/og/og-default.jpg"
+      />
+
       {/* Hero */}
       <section className="border-b border-black/10 bg-ivory">
         <div className="max-page py-16 grid md:grid-cols-[1fr,0.9fr] gap-10 items-center">
