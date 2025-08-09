@@ -10,7 +10,7 @@ import org from "./seo/organization.json";
 
 import ivlMock from "./assets/merch mockups/IVL Dropout Mockup.png";
 import bessieMock from "./assets/merch mockups/Beam Me Up, Bessie Mockup.png";
-import jesterMock from "./assets/merch mockups/Jester Mockup.png";
+import narcissus from "./assets/merch mockups/Narcisus v2 Mockup.png";
 import heroBanner from "./assets/Banners/Echo-League Banner.png";
 
 const products = [
@@ -18,19 +18,19 @@ const products = [
 		title: "Ivy-League Dropout Tee",
 		price: "25.00",
 		image: ivlMock,
-		href: "https://www.etsy.com/listing/000000000?utm_source=site&utm_medium=grid&utm_campaign=hero",
+		href: "https://www.etsy.com/listing/4342094845/ivy-league-dropout-ivy-league-dropout",
 	},
 	{
 		title: "Beam Me Up, Bessie Tee",
 		price: "25.00",
 		image: bessieMock,
-		href: "https://www.etsy.com/listing/000000000?utm_source=site&utm_medium=grid&utm_campaign=hero",
+		href: "https://www.etsy.com/listing/4342099879/beam-me-up-bessie-alien-cow-graphic-tee",
 	},
 	{
-		title: "Jester Hoodie",
-		price: "40.00",
-		image: jesterMock,
-		href: "https://www.etsy.com/listing/000000000?utm_source=site&utm_medium=grid&utm_campaign=hero",
+		title: "Narcissus Tee",
+		price: "25.00",
+		image: narcissus,
+		href: "https://www.etsy.com/listing/4342085592/narcissus-narcissus-shirt-greek",
 	},
 ];
 
