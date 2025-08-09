@@ -8,23 +8,23 @@ import SEO from "./seo/SEO";
 import JsonLd from "./seo/JsonLd";
 import org from "./seo/organization.json";
 
-import ivlMock from "./assets/merch mockups/IVL Dropout Mockup.png";
-import bessieMock from "./assets/merch mockups/Beam Me Up, Bessie Mockup.png";
+import stwMock from "./assets/merch mockups/Steward The Earth Mockup.png";
+import shivaMock from "./assets/merch mockups/Brahma and Shiva Mockup.png";
 import narcissus from "./assets/merch mockups/Narcisus v2 Mockup.png";
 import heroBanner from "./assets/Banners/Echo-League Banner.png";
 
 const products = [
 	{
-		title: "Ivy-League Dropout Tee",
+		title: "Steward the Earth",
 		price: "25.00",
-		image: ivlMock,
-		href: "https://www.etsy.com/listing/4342094845/ivy-league-dropout-ivy-league-dropout",
+		image: stwMock,
+		href: "https://www.etsy.com/listing/4342088402/steward-the-earth-steward-the-earth",
 	},
 	{
-		title: "Beam Me Up, Bessie Tee",
+		title: "Brahma and Shiva do a Jig",
 		price: "25.00",
-		image: bessieMock,
-		href: "https://www.etsy.com/listing/4342099879/beam-me-up-bessie-alien-cow-graphic-tee",
+		image: shivaMock,
+		href: "https://www.etsy.com/listing/4349173143/brahma-shiva-dance-shirt-nataraja",
 	},
 	{
 		title: "Narcissus Tee",
