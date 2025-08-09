@@ -8,9 +8,9 @@ import SEO from "./seo/SEO";
 import JsonLd from "./seo/JsonLd";
 import org from "./seo/organization.json";
 
-import stwMock from "./assets/merch mockups/Steward The Earth Mockup.png";
-import shivaMock from "./assets/merch mockups/Brahma and Shiva Mockup.png";
-import narcissus from "./assets/merch mockups/Narcisus v2 Mockup.png";
+import stwMock from "./assets/merch mockups/steward-the-earth-mockup.png";
+import shivaMock from "./assets/merch mockups/brahma-and-shiva-mockup.png";
+import narcissus from "./assets/merch mockups/narcissus-mockup.png";
 import heroBanner from "./assets/Banners/Echo-League Banner.png";
 
 const products = [
